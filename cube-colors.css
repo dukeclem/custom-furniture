@@ -1,0 +1,42 @@
+.lGray {
+    color: white;
+    background-color: #909090;
+    border: 10px;
+    font-size: 40px;
+    width: 390px;
+}
+
+.dGray {
+    color: white;
+    background-color: #6e6d70;
+    border: 10px;
+    font-size: 40px;
+    width: 570px;
+}
+
+.yellow {
+    color: white;
+    background-color: #e7bc25;
+    border: 10px;
+    font-size: 40px;
+    width: 480px;
+}
+
+.minion {
+    border: 10px;
+    font-size: 35px;
+    font-family: minion, serif;
+}
+
+.myriad {
+    border: 10px;
+    font-size: 35px;
+    font-family: myrian, sans serif;
+}
+
+.main {
+        background-image: url("images/Eames.jpeg");
+        height: 800px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+}

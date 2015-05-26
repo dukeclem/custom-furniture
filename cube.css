@@ -1,0 +1,120 @@
+body{
+    background: #f9f9f9;
+    font-family: Questrial, sans-serif;
+    background-image: url("images/black-image copy.");
+    }
+
+#wrapper{
+    width: 900px;
+    margin: 100px auto;
+}
+/* cube wrapper */
+.cube-wrapper{
+    position: relative;
+    -webkit-perspective: 500px;
+    -webkit-perspective-origin: 50% 100px;
+}
+/* keyframes for rotation */
+@-webkit-keyframes spin{
+    from{ -webkit-transform: rotateY(0deg); }
+    to{ -webkit-transform:
+    rotateY(360deg); }
+}
+
+.cube{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 18s infinite linear;
+    -webkit-transition: all 1s linear;
+}
+/* sides */
+.side{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 50px;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    line-height: 200px;
+    color: gray;
+    text-transform: uppercase;
+    -webkit-transition: all 5s linear;
+}
+
+.back{
+    -webkit-transform: translateZ(-100px)
+    rotateY(180deg);
+    background-image:url("images/danish.jpg")
+}
+
+.right{
+    -webkit-transform: rotateY(-270deg) translateX(100px);
+    -webkit-transform-origin: top right;
+    background-image:url("images/red.jpg")
+}
+
+.left{
+    -webkit-transform: rotateY(270deg) translateX(-100px);
+    -webkit-transform-origin: left center;
+    background-image:url("images/Eames-Plastic.jpg");
+}
+
+.top{
+    -webkit-transform: rotateX(-90deg) translateY(-200px);
+    -webkit-transform-origin: top center;
+}
+
+.bottom{
+    -webkit-transform: rotateX(90deg) translateY(200px);
+    -webkit-transform-origin: bottom center;
+}
+
+.front{
+    -webkit-transform: translateZ(200px);
+    background-image: url('images/team7.jpg');
+}
+
+@-webkit-keyframes typing{
+    from { width:0 }
+      to { width:7em }
+}
+
+@-webkit-keyframes blink{
+    from, to { border-color:transparent }
+    50% { border-color: black }
+}
+
+.logo_text{
+    position: absolute;
+    top: -70px;
+    left: 350px;
+    font-family: verdana, sans-serif;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .1em  #909090;
+    line-height: 1px;
+}
+
+ .green {
+    font-size: 50px;
+    color: #e7bc25;
+    font-family: verdana, sans-serif;
+ }
+
+ .danish, .team7, .eames, .juhl {
+    color:  red;
+ }
+
+
+
+
+
+
+
+
