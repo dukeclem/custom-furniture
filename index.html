@@ -1,11 +1,10 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-
-
 <div class="container">
   <div class="row">
     <nav class="navbar navbar-default">
@@ -19,7 +18,7 @@
         <a class="navbar-brand" href="#">Brand</a>
       </div>
     </nav>
-    <h1 id="name"></h1>
+    <h1 class="name"></h1>
     <div class="col-md-12 panel">
       <div class="col-md-2 dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="style-drop" data-toggle="dropdown">
@@ -28,9 +27,11 @@
         </button>
         <ul class="dropdown-menu" role="menu">
           <li role="presentation"><a role="classic" tabindex="-1" href="#">Classic</a></li>
+          <li role="presentation"><a role="modern" tabindex="-1" href="#">Modern</a></li>
           <li role="presentation"><a role="mid-century" tabindex="-1" href="#">Mid-Century</a></li>
           <li role="presentation"><a role="industrial" tabindex="-1" href="#">Industrial</a></li>
           <li role="presentation"><a role="danish" tabindex="-1" href="#">Danish</a></li>
+          <li role="presentation"><a role="traditional" tabindex="-1" href="#">Traditional</a></li>
         </ul>
       </div>
       <div class="col-md-2 dropdown">
@@ -41,8 +42,10 @@
         <ul class="dropdown-menu" role="menu">
           <li role="presentation"><a role="living-room" tabindex="-1" href="#">Living Room</a></li>
           <li role="presentation"><a role="dining-room" tabindex="-1" href="#">Dining Room</a></li>
+          <li role="presentation"><a role="office" tabindex="-1" href="#">Office</a></li>
           <li role="presentation"><a role="hallway" tabindex="-1" href="#">Hallway</a></li>
           <li role="presentation"><a role="bedroom" tabindex="-1" href="#">Bedroom</a></li>
+          <li role="presentation"><a role="kids" tabindex="-1" href="#">Kids</a></li>
         </ul>
       </div>
       <div class="col-md-2 dropdown">
@@ -53,6 +56,9 @@
         <ul class="dropdown-menu" role="menu">
           <li role="presentation"><a role="chairs" tabindex="-1" href="#">Chairs</a></li>
           <li role="presentation"><a role="sofas" tabindex="-1" href="#">Sofas</a></li>
+          <li role="presentation"><a role="sectionals" tabindex="-1" href="#">Sectionals</a></li>
+          <li role="presentation"><a role="benches" tabindex="-1" href="#">Benches</a></li>
+          <li role="presentation"><a role="tables" tabindex="-1" href="#">Tables</a></li>
           <li role="presentation"><a role="bookcases" tabindex="-1" href="#">Bookcases</a></li>
           <li role="presentation"><a role="shelves" tabindex="-1" href="#">Shelves</a></li>
         </ul>
@@ -60,7 +66,7 @@
     </div>
     <div class="col-md-12 panel furniture">
       <img src="./images/danish.jpg" class="col-md-6 img-responsive" alt="Danish">
-      <h1>Danish Table</h1>
+      <h1 class="name">Danish Table</h1>
       <p>This table is very nice. It is made by hard working Danish peasants.</p>
       <p>Price: $1000</p>
       <p>Material: Wood - Teak</p>
@@ -84,6 +90,7 @@
     </div>
     <br/>
     <hr size="20" color="#e7bc25;">
+    <br/>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -131,64 +138,76 @@
     <br/>
     <br/>
     <br/>
-    <p><h1>LIVING / DINING: </h1><br/>
+    <p><h1 class="name">LIVING / DINING: </h1><br/>
     <p class="beauty" >GET<br/>INSPIRED</p>
     <br/>
     <br/>
-    </div>
+  </div>
+  <br/>
   <hr size="10" color="#e7bc25;">
 
   <div class="col-md-12 panel">
     <div class="row">
-    <div class="col-md-5 panel customization2">
-    <p><img class="img-responsive" src="images/Mid-century accessories.jpg"></p>
-    </div>
+      <div class="col-md-5 panel customization2">
+        <br/>
+        <p><img class="img-responsive" src="images/Mid-century accessories.jpg"></p>
+      </div>
       <div class="col-md-7 panel customization1">
+        <br/>
         <p><img class="img-responsive" src="images/arm-options.jpg"></p>
-        <p><br/><h1>CUSTOM OPTIONS FOR ANY PIECE </h1>
+        <p><br/><h1 class="name">CUSTOM OPTIONS FOR ANY PIECE </h1>
+        <br/>
         <hr size="8" color= "#e7bc25;">
       </div>
-
     </div>
+    <br/>
   </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
+  <div>
+    <div class="col-md-12 well">
       <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 text-center">
-          <h4><strong>Name</strong>
-          </h4>
-          <p>3481 Ketteridge Ave.<br>Irvine, CA 92620</p>
-          <ul class="list-unstyled">
-            <li><i class="fa fa-phone fa-fw"></i> (800) 456-7890</li>
-            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
-            </li>
-          </ul>
-          <br>
-          <ul class="list-inline">
-            <li>
-              <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-            </li>
-          </ul>
-          <hr class="small">
-          <p class="text-muted">Copyright &copy;custom 2015</p>
+        <div class="col-md-12 craft">
+          <div class="col-md-4 craft">
+          <p><img class="img-responsive" src="images/Craftmanship-3.jpg">
+            <img class="img-responsive" src="images/craftmen.jpg">
+            <img class="img-responsive" src="images/craft-care.jpg"></p>
+          </div>
         </div>
       </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+              <h4><strong>Name</strong>
+              </h4>
+              <p>3481 Ketteridge Ave.<br>Irvine, CA 92620</p>
+              <ul class="list-unstyled">
+                <li><i class="fa fa-phone fa-fw"></i> (800) 456-7890</li>
+                <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                </li>
+              </ul>
+              <br>
+              <ul class="list-inline">
+                <li>
+                  <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                </li>
+              </ul>
+              <hr class="small">
+              <p class="text-muted">Copyright &copy;custom 2015</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-  </footer>
-
-
-
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="import.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="import.js"></script>
 </body>
 </html>

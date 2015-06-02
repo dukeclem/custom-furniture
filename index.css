@@ -1,0 +1,37 @@
+.furniture {
+    font-family: raleway thin, sans-serif;
+    color: #333;
+}
+
+.name {
+    font-family: melbourne, sans-serif;
+    font-weight: 100;
+}
+
+.beauty {
+    font-size: 60px;
+    color: #cf7600;
+    font-family: raleway thin, sans-serif;
+    font-weight: 100;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+}
+
+#carousel-example-generic {
+    width: 720px;
+    float: right;
+}
+
+.craft {
+    float: left;
+    display: inline-block;
+}
+
+
+
+
+
+
