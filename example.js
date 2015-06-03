@@ -2,48 +2,48 @@
  * Created by dukeclem on 6/3/15.
  */
 function palindrome(word) {
-//declaration, function name, function argument, opening '{' of function body.
+//, function name, function argument, opening code block of function body.
     var reverse = word.split('').reverse().join('');
-    //new variable - (reverse), assignment operator, function name, .method w/empty string argument, chained to, .method w/empty argument, chained to, method w/empty string, close;
+    //new variable - (reverse), assignment operator, object, .method w/empty string argument, chained to, .method w/empty string argument, chained to, method w/empty string, close;
     if(word === reverse){
-    //if function,( word (loosely equal to) operator, variable), open tag of 'if' function body
+    //statement, object, strictly equal to operator, variable, open block of 'if' function body
         console.log('It is a palindrome');
-    //log onto console(print), ('statement'), close;
+    //object, method w/ string argument, close;
     } else {
-    //close 'if' body tag, statement, open of 'else tag',
+    //close code block of 'if' function body, statement, open code block of 'else' function body,
 
         console.log('This is not a palindrome');
-        //log onto console(print), ('statement'),
+        //object, method, w/ string argument, close;
     }
-    // close of 'else' tag
+    // close code block of 'else' function body.
 }
-// close tag of 'palindrome' function
+// close code block of 'palindrome' function body.
 
 
 palindrome('ttttuuu');
-//'palindrome' function w/argument 'ttttuuu', close;
+//'palindrome' function, w/ string argument 'ttttuuu', close;
 
 function longestWord(sentence) {
-// new function 'longestWord' w/argument sentence, opening body tag
+// new function 'longestWord' w/ string argument, opening code block of function body.
     var myArray  = sentence.split(' ');
-    //new variable 'myArray', set to function 'sentence' w/method 'split' w/empty string argument, close;
+    //new variable 'myArray', assignment operator, object, method w/empty string argument, close;
     console.log(myArray);
-    //log to console, variable 'myArray', close;
+    //object, method, w/ argument var myArray, close;
     var long = '';
-    //new variable 'long', set to empty string, close;
+    //new variable 'long',assignment operator, empty string, close;
     for (var i = 0; i < myArray.length; i++) {
-    // for statement, variable i(myArray) set to 0, close; if 'i' is less than length of myArray, close; increment 'i' each time by 1, opening of body tag
+    //statement, variable i, assignment operator, index #0; var 'i', operator, variable, method close; 'i' increases by 1, opening code block of function body.
         if(myArray[i].length > long.length) {
-     //if function w/arguments of var 'myArray's length method being greater than that of var 'long', opening of 'if' function body tag
+     //statement, arguments of var, method, operator, var, method, opening code block of 'if' function body
            long = myArray[i];
-           //var 'long', set to var 'myArray[i]', close;
+           //var ,assignment operator, set to var, close;
         }
-        //closing body tag of 'if' function
+        //closing code block of 'if' function body
     }
-    //closing body tag of 'for' function
+    //closing code block of 'for' function body
     return long;
     //statement, var 'long', close;
 }
-//closing tag
+//closing code block of function body
 console.log(longestWord('where is the longest word'));
-//log function 'longestWord' w/ argument 'where is the longest word', to console, close;
+//object, method, function, string argument, close;
