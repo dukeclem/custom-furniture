@@ -20,16 +20,25 @@ hr {
     height: 2px;
 }
 
-#carousel-example-generic {
+#gallery {
     width: 720px;
     float: right;
 }
 
-.craft {
-    float: left;
-    display: inline-block;
+.btn{
+    color: #cf7600;;
+    border-color: #cf7600;
 }
 
+.accordion-panel {
+    font-size: 19px;
+    color: #333;
+}
+
+.active {
+    color: #cf7600;
+    font-size: 30px;
+}
 
 
 
